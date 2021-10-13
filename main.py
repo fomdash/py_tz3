@@ -23,7 +23,7 @@ def list_mult(list):
     mult = 1
     for a in list:
         mult = mult * a
-
+    #
     return mult
 
 def tz3():
