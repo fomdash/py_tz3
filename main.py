@@ -1,7 +1,5 @@
-# This is a sample Python script.
+import pytest
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 
 def read_file():
     data = []
@@ -11,38 +9,55 @@ def read_file():
             data.extend(line_list)
     return data
 
-def list_sum(list):
+
+def list_sum(lst):
     summa = 0
-    for a in list:
+    for a in lst:
         summa = summa + a
 
     return summa
 
 
-def list_mult(list):
+def list_mult(lst):
     mult = 1
-    for a in list:
+    for a in lst:
         mult = mult * a
     #
     return mult
 
+
 def tz3():
+    lst = read_file()
+    print(lst)
 
-    list = read_file()
-    print(list)
-
-
-    minnumb = min(list)
+    minnumb = min(lst)
     print(f'min: {minnumb}')
 
-    maxnumb = max(list)
+    maxnumb = max(lst)
     print(f'max: {maxnumb}')
 
-    summa = list_sum(list)
-    mult = list_mult(list)
+    summa = list_sum(lst)
+    mult = list_mult(lst)
 
     print(f'summa: {summa}')
     print(f'mult: {mult}')
+
+
+def test_read_file():
+    lst = read_file()
+    assert lst == [1, 4, 2, 3]
+
+
+def test_mult():
+    lst = [1, 4, 2, 3]
+    mult = list_mult(lst)
+    assert mult == 1 * 4 * 2 * 3
+
+
+def test_sum():
+    list = [1, 4, 2, 3]
+    mult = list_sum(list)
+    assert mult == 1 + 4 + 2 + 3
 
 
 # Press the green button in the gutter to run the script.
