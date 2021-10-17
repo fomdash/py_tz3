@@ -1,4 +1,4 @@
-import pytest
+
 
 
 def read_file():
@@ -31,16 +31,16 @@ def tz3():
     print(lst)
 
     minnumb = min(lst)
-    print(f'min: {minnumb}')
+    print(f'Минимльное: {minnumb}')
 
     maxnumb = max(lst)
-    print(f'max: {maxnumb}')
+    print(f'Максимальное: {maxnumb}')
 
     summa = list_sum(lst)
     mult = list_mult(lst)
 
-    print(f'summa: {summa}')
-    print(f'mult: {mult}')
+    print(f'Сумма: {summa}')
+    print(f'Произведеие: {mult}')
 
 
 def test_read_file():
