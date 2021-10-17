@@ -37,7 +37,7 @@ def tz3():
     mult = list_mult(lst)
 
     print(f'Сумма: {summa}')
-    print(f'Произведеие: {mult}')
+    print(f'Произведение: {mult}')
 
 def test_min():
     lst = [1, 4, 2, 3]
