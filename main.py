@@ -1,5 +1,4 @@
-
-
+import pytest
 
 def read_file():
     data = []
@@ -14,7 +13,6 @@ def list_sum(lst):
     summa = 0
     for a in lst:
         summa = summa + a
-
     return summa
 
 
@@ -22,7 +20,6 @@ def list_mult(lst):
     mult = 1
     for a in lst:
         mult = mult * a
-    #
     return mult
 
 
